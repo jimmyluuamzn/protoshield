@@ -10,7 +10,7 @@ function App() {
     (async () => {
       let userData;
       try {
-        const response = await fetch("https://randomuser.me/api/?results=50");
+        const response = await fetch("https://randomuser.me/api/?results=25");
         userData = await response.json();
       } catch (error) {
         console.log(error);
@@ -32,7 +32,6 @@ function App() {
       <h1 class="title">SHIELD</h1>
       <input className="search-box" onInput={filterCards} placeholder="Search for a CSA..."/>
       <div className="cards-container">
-
       {users.map((user, index) => (
         <Profile key={index} userData={user} />
         ))}

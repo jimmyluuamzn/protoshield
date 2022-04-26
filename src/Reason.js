@@ -2,7 +2,7 @@ import './Reason.css';
 
 const Reason = ({ reason }) => {
   return <div className="reason">
-      <p>Constantly exporting customer data.</p>
+      <p>{reason}</p>
     </div>;
 };
 

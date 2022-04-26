@@ -1,5 +1,6 @@
 .App {
   padding: 4rem;
+  background-color: dimgray;
 }
 
 .cards-container {
@@ -18,4 +19,5 @@
 
 .title {
   text-align: center;
+  color: cornsilk;
 }
