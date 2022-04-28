@@ -31,7 +31,7 @@ const Profile = ({ userData }) => {
     return (
         <>
         <div>
-            {showModal && <Modal setShowModal={setShowModal}/>}
+            {showModal && <Modal setShowModal={setShowModal} userData={userData} />}
         </div>
         <div className="profile" onClick={openModal}>
                 <div className="profile__title">{userData.name.first} {userData.name.last}</div>
