@@ -1,7 +1,15 @@
 import './Profile.css';
 import Reason from './Reason';
+import React from 'react';
+import Modal from './Modal';
 
 const Profile = ({ userData }) => {
+
+    const [showModal, setShowModal] = React.useState(false);
+
+    const openModal = () => {
+        setShowModal(true);
+      }
     
     const reasons = [
         "Constantly exporting customer data.",
@@ -16,23 +24,23 @@ const Profile = ({ userData }) => {
         "Copying credit card number."
     ]
 
-    function toggleDetails(e) {
-        e.preventDefault();
-        alert("Details");
-    }
-
     function getReason(r) {
-        return reasons[r];
+        return reasons[r % 10];
     }
 
     return (
-        <div className="profile" onClick={toggleDetails}>
-            <div className="profile__title">{userData.name.first} {userData.name.last}</div>
-            <div className="profile__body">
-                <Reason reason={getReason(Math.floor(Math.random() * 10))}/>
-                <div className="profile__image"><img src={userData.picture.medium}/></div>
-            </div>
+        <>
+        <div>
+            {showModal && <Modal setShowModal={setShowModal}/>}
         </div>
+        <div className="profile" onClick={openModal}>
+                <div className="profile__title">{userData.name.first} {userData.name.last}</div>
+                <div className="profile__body">
+                    <Reason reason={getReason(userData.dob.age)} />
+                    <div className="profile__image"><img src={userData.picture.medium} /></div>
+                </div>
+        </div>
+        </>
     )
 };
 

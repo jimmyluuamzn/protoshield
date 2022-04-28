@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import React from "react";
 import Profile from "./Profile";
+import Detail from "./Modal";
 
 function App() {
   const [allUsers, setAllUsers] = useState([]);
