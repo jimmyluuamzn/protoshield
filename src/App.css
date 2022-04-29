@@ -8,6 +8,25 @@
   flex-wrap: wrap;
 }
 
+.cards-container-static {
+  row-gap: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.cards-container-static-row {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+}
+
+.cards-container-static-column {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+
 .search-box {
   outline: none;
   width: 100%;
