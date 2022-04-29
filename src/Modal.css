@@ -23,7 +23,7 @@
     position: relative;
     animation: animate 0.3s;
   }
-  .modal button {
+  .modal .cross {
     position: absolute;
     top: 7px;
     right: 7px;
@@ -39,7 +39,7 @@
 
   .modal-footer {
     position: absolute;
-    bottom: 13%;
+    bottom: 7%;
     align-items: center;
   }
   
@@ -54,15 +54,18 @@
   
 
   .btn {
-    color:inherit;
-      font-family:inherit;
-    font-size: inherit;
-    background: white;
+    background: crimson;
+    width: max-content;
+    color:white;
+    font-family:inherit;
+    font-size:large;
+    font-weight: bolder;
     padding: 0.3rem 3.4rem;
     border: 3px solid black;
     margin-right: 2.6rem;
-    box-shadow: 0 0 0 black;
+    box-shadow: 0 0 0 grey;
     transition: all 0.2s;
+    cursor: pointer;
   }
   
   .btn:last-child {

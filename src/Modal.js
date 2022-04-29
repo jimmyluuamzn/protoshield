@@ -16,10 +16,9 @@ const Modal = ({ setShowModal, userData }) => {
     <div className="container" ref={modalRef} onClick={closeModal}>
       <div className="modal">
         <Detail userData={userData}/>
-        <button onClick={() => setShowModal(false)}>X</button>
+        <button class="cross" onClick={() => setShowModal(false)}>X</button>
         <div class="modal-footer">
-          <button class="btn">Yes</button>
-          <button class="btn">No</button>
+          <button class="btn" onClick={() => setShowModal(false)}>Block this CSA</button>
         </div>
       </div>
     </div>
