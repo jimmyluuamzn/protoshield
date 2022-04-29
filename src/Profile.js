@@ -18,7 +18,7 @@ const Profile = ({ userData }) => {
         "Login from a malicious location.",
         "Bad language detected.",
         "Unknown reason.",
-        "Copying data into unauthorized sources.",
+        "Played a NSFW game.",
         "Lots of copy-paste detected.",
         "Gift card issued to CSA.",
         "Copying credit card number."
@@ -33,7 +33,7 @@ const Profile = ({ userData }) => {
         <div>
             {showModal && <Modal setShowModal={setShowModal} userData={userData} />}
         </div>
-        <div className="profile" onClick={openModal}>
+        <div className="profile" dataId={userData.name.first + userData.name.last} onClick={openModal}>
                 <div className="profile__title">{userData.name.first} {userData.name.last}</div>
                 <div className="profile__body">
                     <Reason reason={getReason(userData.dob.age)} />
