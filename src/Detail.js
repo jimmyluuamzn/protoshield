@@ -1,6 +1,19 @@
 import './Detail.css';
 
 const Detail = ({ userData }) => {
+    function getActivity(r) {
+        return activity[r % 10];
+    }
+
+    const activity = [
+        "Login",
+        "Export Order Information",
+        "Reset Password",
+        "Issue Refund",
+        "Issue Giftcard",
+        "Call Customer"
+    ]
+
   return (
     <div class="wrapper">
         <div class="infobar">
@@ -22,7 +35,36 @@ const Detail = ({ userData }) => {
                 <input type="radio" name="css-tabs" id="tab-2" class="tab-switch"/>
                 <label for="tab-2" class="tab-label">Audit History</label>
                 <div class="tab-content">
-
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>IP</th>
+                                <th>Location</th>
+                                <th>Timestamp</th>
+                                <th>Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{(Math.floor(Math.random() * 255) + 1)+"."+(Math.floor(Math.random() * 255))+"."+(Math.floor(Math.random() * 255))+"."+(Math.floor(Math.random() * 255))}</td>
+                                <td>{userData.location.country}</td>
+                                <td>{userData.registered.date}</td>
+                                <td>{getActivity(Math.floor(Math.random() * (5 + 1)))}</td>
+                            </tr>
+                            <tr>
+                                <td>{(Math.floor(Math.random() * 255) + 1)+"."+(Math.floor(Math.random() * 255))+"."+(Math.floor(Math.random() * 255))+"."+(Math.floor(Math.random() * 255))}</td>
+                                <td>{userData.location.country}</td>
+                                <td>{userData.registered.date}</td>
+                                <td>{getActivity(Math.floor(Math.random() * (5 + 1)))}</td>
+                            </tr>
+                            <tr>
+                                <td>{(Math.floor(Math.random() * 255) + 1)+"."+(Math.floor(Math.random() * 255))+"."+(Math.floor(Math.random() * 255))+"."+(Math.floor(Math.random() * 255))}</td>
+                                <td>{userData.location.country}</td>
+                                <td>{userData.registered.date}</td>
+                                <td>{getActivity(Math.floor(Math.random() * (5 + 1)))}</td>
+                            </tr>                       
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="tab">
