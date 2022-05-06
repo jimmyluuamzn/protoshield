@@ -19,13 +19,25 @@ const Profile = ({ userData }) => {
         "Bad language detected.",
         "Unknown reason.",
         "Played a NSFW game.",
-        "Lots of copy-paste detected.",
+        "High volume of copy-paste detected.",
         "Gift card issued to CSA.",
         "Copying credit card number."
     ]
 
     function getReason(r) {
         return reasons[r % 10];
+    }
+
+    function getRiskLevel(c) {
+        if (c == "Ravendale1"){
+            return "High";
+        }
+        else if (c == "Ravendale2"){
+            return "Medium";
+        }
+        else {
+            return "Low";
+        }
     }
 
     return (
@@ -38,6 +50,9 @@ const Profile = ({ userData }) => {
                 <div className="profile__body">
                     <Reason reason={getReason(userData.dob.age)} />
                     <div className="profile__image"><img src={userData.picture.medium} /></div>
+                </div>
+                <div className="risk_level">
+                    <p><strong>Risk level: </strong>{getRiskLevel(userData.location.city)}</p>
                 </div>
         </div>
         </>

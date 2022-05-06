@@ -25,7 +25,7 @@ function App() {
         number: 10,
         name: "Main St"
       },
-      city: "Brampton",
+      city: "Ravendale1",
       state: "Ontario",
       postcode: "K5T 1W2",
       country: "Canada"
@@ -44,14 +44,14 @@ function App() {
       large: "hacker1.jpg"
     },
     dob: {
-      age: 10
+      age: 23
     },
     location: {
       street:{
         number: 10,
         name: "Main St"
       },
-      city: "Brampton",
+      city: "Ravendale2",
       state: "Ontario",
       postcode: "K5T 1W2",
       country: "Canada"
@@ -73,14 +73,14 @@ function App() {
         large: "hacker4.jpg"
       },
       dob: {
-        age: 10
+        age: 45
       },
       location: {
         street:{
           number: 10,
           name: "Main St"
         },
-        city: "Brampton",
+        city: "Ravendale3",
         state: "Ontario",
         postcode: "K5T 1W2",
         country: "Canada"
@@ -99,14 +99,14 @@ function App() {
         large: "hacker3.jpg"
       },
       dob: {
-        age: 10
+        age: 79
       },
       location: {
         street:{
           number: 10,
           name: "Main St"
         },
-        city: "Brampton",
+        city: "Ravendale3",
         state: "Ontario",
         postcode: "K5T 1W2",
         country: "Canada"

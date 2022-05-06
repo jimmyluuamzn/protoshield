@@ -45,3 +45,7 @@ div[dataId="NikenLee"]{
 .profile__image img {
     border-radius: 50%;
 }
+
+.risk_level {
+    margin-bottom: 10px;
+}
