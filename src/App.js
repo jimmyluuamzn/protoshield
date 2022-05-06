@@ -148,6 +148,9 @@ function App() {
       <h1 class="title">SHIELD</h1>
       <h3 class="subtitle"> - by TED </h3>
       <input className="search-box" onInput={filterCards} placeholder="Search for a CSA..."/>
+      <div className="top_threats">
+        <p>Top Threats</p>
+      </div>
       <div className="cards-container-static">
         <div className="cards-container-static-row">
           {staticUsers.map((user, index) => (
@@ -159,6 +162,9 @@ function App() {
         <Profile key={index} userData={user} />
         ))}
         </div>
+      </div>
+      <div className="all_threats">
+        <p>All Threats</p>
       </div>
       <div className="cards-container">
       {users.map((user, index) => (

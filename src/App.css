@@ -6,6 +6,7 @@
 .cards-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cards-container-static {
@@ -47,4 +48,20 @@
   margin-top: -50px;
   color:beige;
   font-size:20px;
+}
+
+.top_threats {
+  text-align: center;
+  color: aliceblue;
+  font-style: italic;
+  font-size: 25px;
+  margin-top:50px;
+}
+
+.all_threats {
+  text-align: center;
+  color: aliceblue;
+  font-style: italic;
+  font-size: 25px;
+  margin-top:50px;
 }
