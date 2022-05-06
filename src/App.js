@@ -129,6 +129,7 @@ function App() {
         userData = [];
       }
       console.log(users)
+      userData.results = [...userData.results, ...staticUsers, ...staticUsersColumn];
       setAllUsers(userData.results);
       setUsers(userData.results);
     })();
@@ -145,6 +146,7 @@ function App() {
   return (
     <div className="App">
       <h1 class="title">SHIELD</h1>
+      <h3 class="subtitle"> - by TED </h3>
       <input className="search-box" onInput={filterCards} placeholder="Search for a CSA..."/>
       <div className="cards-container-static">
         <div className="cards-container-static-row">

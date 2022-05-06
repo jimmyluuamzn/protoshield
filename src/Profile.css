@@ -9,18 +9,22 @@
 
 div[dataId="MichaelWang"]{
     width: 66% !important;
+    background-color: lightcoral;
 }
 
 div[dataId="JimmyLu"]{
     width: 34% !important;
+    background-color: navajowhite;
 }
 
 div[dataId="ZipeiWei"]{
     width: 100% !important;
+    background-color:antiquewhite;
 }
 
 div[dataId="NikenLee"]{
     width: 100% !important;
+    background-color: antiquewhite;
 }
 
 

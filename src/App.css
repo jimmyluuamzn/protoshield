@@ -38,5 +38,13 @@
 
 .title {
   text-align: center;
-  color: cornsilk;
+  color:khaki;
+  font-size:90px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: -50px;
+  color:beige;
+  font-size:20px;
 }
