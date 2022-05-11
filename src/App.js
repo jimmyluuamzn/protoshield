@@ -10,8 +10,8 @@ function App() {
   const staticUsers = [
   {
     name: {
-      first: "Michael",
-      last: "Wang"
+      first: "Adam",
+      last: "Powers"
     },
     picture: {
       medium: "hacker2.jpg",
